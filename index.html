@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Gw</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Halo, Ini Portofolio Gw!</h1>
-    
-    <!-- Tampilkan PDF -->
-    <embed src="Porto%20EN%20Teddy%20Sunanto.pdf" type="application/pdf" width="100%" height="600px">
-
-    <!-- Tombol Download PDF -->
-    <p><a href="Porto%20EN%20Teddy%20Sunanto.pdf" download>Download Portofolio (PDF)</a></p>
+    <header>
+        <h1>[Nama Anda] - IT & Design Portfolio</h1>
+        <p>Mahasiswa Teknik Informatika | Editor & Developer | Lahir Oktober 1993</p>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya adalah mahasiswa semester 6 TI dengan pengalaman 9+ tahun di editing dan content e-commerce. Suka coding, pernah buat app/website/extension. Skills: Photoshop, CapCut, Office, Flutter, PHP, dll.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Grid cards -->
+        <div class="project-grid">
+            <!-- Card 1 -->
+            <div class="project-card">
+                <h3>Extension Buka Banyak Tab</h3>
+                <p>Tools: VSCode, Excel. Deskripsi: Otomatis buka tabs untuk workflow cepat. Dibantu AI untuk optimasi.</p>
+                <img src="images/ext-tab-screenshot.png" alt="Screenshot">
+                <a href="https://github.com/username/vs-extension-open-multiple-tabs">GitHub Repo</a>
+            </div>
+            <!-- Ulangi untuk yang lain sesuai urutan -->
+            <!-- ... -->
+            <div class="project-card">
+                <h3>Editan Video</h3>
+                <p>Tools: CapCut + Freepik. Deskripsi: Video edit untuk content. Dibantu AI untuk efek.</p>
+                <video src="videos/sample.mp4" controls width="300"></video>
+                <a href="https://github.com/username/video-edits-portfolio">GitHub Repo</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contact: [email] | LinkedIn: [link]</p>
+    </footer>
 </body>
 </html>

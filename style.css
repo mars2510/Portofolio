@@ -1,0 +1,5 @@
+body { font-family: Arial; margin: 0; padding: 20px; background: #f4f4f4; }
+header { text-align: center; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+img, video { max-width: 100%; height: auto; }

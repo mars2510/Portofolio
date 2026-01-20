@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyek Pengembangan - Teddy Sunanto Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">Teddy Sunanto</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html#projects" data-i18n="nav.back">Kembali</a></li>
+        <li><a href="Rich.html">Rich Content</a></li>
+        <li><a href="editor.html">Image Editor</a></li>
+        <li><a href="Showcase.html">Showcase</a></li>
+        <li><a href="index.html#contact">Hubungi Saya</a></li>
+      </ul>
+      <div class="lang-switch">
+        <label for="langSelect" class="sr-only">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- Hero kecil -->
+  <section class="section hero-small">
+    <div class="hero-bg">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+    </div>
+    <div class="container">
+      <h1 data-i18n="proyek.title">Proyek Pengembangan & Coding</h1>
+      <p class="subtitle" data-i18n="proyek.subtitle">Koleksi proyek web, mobile, dan tools automation yang saya bangun — mulai dari extension sederhana hingga aplikasi hybrid full-stack.</p>
+    </div>
+  </section>
+
+  <!-- Konten Utama: Grid Card Kiri-Teks, Kanan-Gambar -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 1. Extension Buka Banyak Tab -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Extension Buka Banyak Tab</h2>
+          <p class="category">Automation Tool (Batch & Excel Integration)</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Notepad (Batch scripting), Microsoft Excel, VSCode</p>
+
+          <p>Proyek pribadi yang saya buat saat menjabat sebagai Image Editor. Extension berbentuk file batch (.bat) yang memungkinkan membuka banyak tab/URL atau folder sekaligus hanya dengan dua kali klik. File ini bisa diedit langsung di Notepad untuk menambah/mengurangi daftar link.</p>
+
+          <div class="workflow">
+            <h4>Alur Kerja Pembuatan</h4>
+            <ol>
+              <li>Identifikasi masalah: membuka puluhan tab produk/gambar secara manual memakan waktu lama.</li>
+              <li>Buat script batch sederhana (.bat) dengan perintah start untuk membuka URL/folder.</li>
+              <li>Integrasi dengan Excel: list URL di sheet, export ke .bat via macro sederhana.</li>
+              <li>Test & debug: pastikan kompatibel Windows, handle error jika link invalid.</li>
+              <li>Distribusi: bagikan ke tim sebagai file executable sederhana.</li>
+            </ol>
+          </div>
+
+          <div class="case-study">
+            <h4>Case Study Mini</h4>
+            <div class="case-item"><strong>Tujuan:</strong> Menghemat waktu tim saat menangani batch editing produk di e-commerce.</div>
+            <div class="case-item"><strong>Tantangan:</strong> Proses manual repetitif, rawan salah klik, dan memakan waktu hingga 5–10 menit per sesi.</div>
+            <div class="case-item"><strong>Solusi:</strong> File .bat yang bisa diedit Notepad + opsi list dari Excel untuk fleksibilitas.</div>
+            <div class="case-item"><strong>Hasil:</strong> Mengurangi waktu buka tab hingga 70–80%, digunakan oleh beberapa rekan editor.</div>
+          </div>
+        </div>
+
+        <div class="rich-media">
+          <div class="before-after-grid">
+            <div class="before-after-item">
+              <img src="images/proyek/a_script.png" alt="Script Buka Banyak Tab" class="screenshot" loading="lazy" />
+              <div class="caption">Script (.bat)</div>
+            </div>
+            <div class="before-after-item">
+              <img src="images/proyek/a_hasil_exse.png" alt="Hasil Eksekusi Buka Banyak Tab" class="screenshot" loading="lazy" />
+              <div class="caption">Hasil Eksekusi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Extension Auto Click -->
+      <div class="rich-item reverse">
+        <div class="rich-media">
+          <div class="before-after-grid">
+            <div class="before-after-item">
+              <div class="caption">Screenshot belum tersedia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rich-text">
+          <h2>Extension Auto Click</h2>
+          <p class="category">Browser / VSCode Automation Tool</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> JavaScript, VSCode, Browser Extension (Manifest V3)</p>
+
+          <p>Proyek pribadi saat menjabat sebagai Rich Content Specialist. Extension yang di-install di browser (atau VSCode) untuk otomatis mengklik tombol/elemen tertentu pada halaman/tab yang sama dalam satu window. Sangat berguna untuk tugas repetitif seperti approve konten atau klik tombol di dashboard.</p>
+
+          <div class="workflow">
+            <h4>Alur Kerja Pembuatan</h4>
+            <ol>
+              <li>Identifikasi tugas repetitif di dashboard e-commerce (klik tombol berulang).</li>
+              <li>Buat extension sederhana dengan content script JS untuk detect elemen target.</li>
+              <li>Tambahkan popup/button trigger untuk mengaktifkan auto-click.</li>
+              <li>Test di browser (Chrome/Edge) dan VSCode jika diadaptasi.</li>
+              <li>Debug: pastikan hanya berjalan di tab/window aktif, tidak mengganggu user experience.</li>
+            </ol>
+          </div>
+
+          <div class="case-study">
+            <h4>Case Study Mini</h4>
+            <div class="case-item"><strong>Tujuan:</strong> Mengotomatiskan klik berulang untuk meningkatkan produktivitas tim content.</div>
+            <div class="case-item"><strong>Tantangan:</strong> Tugas klik manual di dashboard memakan waktu dan rentan human error.</div>
+            <div class="case-item"><strong>Solusi:</strong> Extension yang trigger klik pada elemen spesifik saat diaktifkan, aman di satu tab/window.</div>
+            <div class="case-item"><strong>Hasil:</strong> Mengurangi waktu task hingga 40–60%, meningkatkan efisiensi harian.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Website ElektroArt -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Website ElektroArt</h2>
+          <p class="category">Website Portal Teknologi (Tugas Kampus)</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Visual Studio Code, HTML5, CSS3, JavaScript</p>
+
+          <p>Website portal teknologi bernama ElektroArt yang berisi informasi produk elektronik (laptop, smartphone, tablet), artikel tutorial, dan berita teknologi. Dirancang sebagai media informasi yang informatif dan menarik secara visual.</p>
+
+          <div class="workflow">
+            <h4>Alur Kerja Pembuatan</h4>
+            <ol>
+              <li>Riset konten: kategori produk elektronik + topik tutorial/berita.</li>
+              <li>Desain struktur: homepage → kategori produk → artikel detail.</li>
+              <li>Implementasi: HTML untuk struktur, CSS responsif, JS untuk interaksi sederhana (filter, carousel).</li>
+              <li>Optimasi visual: layout grid, card produk, dark/light mode toggle.</li>
+              <li>Test & deploy: cross-browser, mobile responsive.</li>
+            </ol>
+          </div>
+
+          <div class="case-study">
+            <h4>Case Study Mini</h4>
+            <div class="case-item"><strong>Tujuan:</strong> Membuat portal informasi teknologi yang user-friendly dan menarik untuk pembaca umum.</div>
+            <div class="case-item"><strong>Tantangan:</strong> Mengemas informasi teknis agar mudah dipahami tanpa mengurangi kedalaman.</div>
+            <div class="case-item"><strong>Solusi:</strong> Gunakan card visual + gambar produk + artikel ringkas dengan navigasi mudah.</div>
+            <div class="case-item"><strong>Hasil:</strong> Proyek tugas kampus mendapat nilai baik, menjadi dasar belajar front-end lebih lanjut.</div>
+          </div>
+        </div>
+
+        <div class="rich-media">
+          <div class="before-after-grid">
+            <div class="before-after-item">
+              <img src="images/proyek/c_script.png" alt="ElektroArt - kode/template" class="screenshot" loading="lazy" />
+              <div class="caption">Kode / Template</div>
+            </div>
+            <div class="before-after-item">
+              <img src="images/proyek/c_hasil_exse.png" alt="ElektroArt - tampilan" class="screenshot" loading="lazy" />
+              <div class="caption">Halaman / Hasil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Aplikasi Barcode Scanner Parking -->
+      <div class="rich-item reverse">
+        <div class="rich-media">
+          <div class="before-after-grid">
+            <div class="before-after-item">
+              <img src="images/proyek/barcode_scanner.png" alt="Barcode Scanner Parking" class="screenshot" loading="lazy" />
+              <div class="caption">Aplikasi - Tampilan Scan</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rich-text">
+          <h2>Aplikasi Barcode Scanner Parking</h2>
+          <p class="category">Mobile App (Tugas Kampus)</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Android Studio, Kotlin + Jetpack Compose, Google Sheets API</p>
+
+          <p>Sistem informasi manajemen parkir berbasis Android untuk kawasan industri. Menggunakan pemindaian barcode pada stiker kendaraan sebagai kontrol akses masuk/keluar.</p>
+
+          <blockquote>
+            Komplek industri merupakan kawasan dengan aktivitas tinggi... (abstrak lengkap seperti yang kamu berikan, saya singkatkan di sini untuk tampilan rapi)
+          </blockquote>
+
+          <div class="workflow">
+            <h4>Alur Kerja Sistem</h4>
+            <ol>
+              <li>Karyawan ajukan stiker parkir ke personalia.</li>
+              <li>Personalia verifikasi dokumen & lanjut ke GA.</li>
+              <li>GA terbitkan stiker dengan barcode unik.</li>
+              <li>Petugas keamanan scan barcode di gerbang untuk log masuk/keluar.</li>
+              <li>Data tersimpan di Google Sheets untuk monitoring & laporan.</li>
+            </ol>
+          </div>
+
+          <div class="case-study">
+            <h4>Case Study Mini</h4>
+            <div class="case-item"><strong>Tujuan:</strong> Menciptakan tata kelola parkir yang tertib, aman, dan terkontrol di kawasan industri.</div>
+            <div class="case-item"><strong>Tantangan:</strong> Parkir sembarangan, melebihi kapasitas, dan sulit monitoring manual.</div>
+            <div class="case-item"><strong>Solusi:</strong> App Android + scan barcode + integrasi Sheets untuk log real-time.</div>
+            <div class="case-item"><strong>Hasil:</strong> Proyek tugas kampus berhasil, area parkir lebih tertata, keamanan meningkat.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Sistem Manajemen Visitor (Flutter + PHP) -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Sistem Manajemen Visitor (Flutter + PHP)</h2>
+          <p class="category">Hybrid Web & Mobile App (Tugas Kampus)</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> VSCode, Flutter (mobile), PHP + MySQL (backend), XAMPP, HTML/CSS/JS (web)</p>
+
+          <p>Aplikasi manajemen visitor untuk kompleks industri ADR Group: registrasi mandiri, validasi QR multi-pos, monitoring pergerakan, dan pelaporan data.</p>
+
+          <blockquote>
+            Penelitian ini membahas perancangan dan pengembangan aplikasi manajemen visitor... (abstrak lengkap, saya ringkas untuk tampilan)
+          </blockquote>
+
+          <div class="workflow">
+            <h4>Alur Kerja Sistem</h4>
+            <ol>
+              <li>Tamu registrasi mandiri via web (Bootstrap/React).</li>
+              <li>Admin verifikasi & generate QR Code.</li>
+              <li>Visitor berjalan ke pos tujuan.</li>
+              <li>Security di pos tujuan validasi menggunakan app Flutter (scan QR).</li>
+              <li>Visitor selesai → kembali ke pos utama untuk validasi akhir & akhiri kunjungan.</li>
+            </ol>
+          </div>
+
+          <div class="case-study">
+            <h4>Case Study Mini</h4>
+            <div class="case-item"><strong>Tujuan:</strong> Mendigitalisasi proses kunjungan tamu untuk efisiensi dan keamanan lebih tinggi.</div>
+            <div class="case-item"><strong>Tantangan:</strong> Sistem manual rentan kesalahan, keterlambatan laporan, dan sulit tracking real-time.</div>
+            <div class="case-item"><strong>Solusi:</strong> Hybrid app: web untuk registrasi/admin, mobile Flutter untuk scan QR multi-pos.</div>
+            <div class="case-item"><strong>Hasil:</strong> Proses verifikasi lebih cepat, log aktivitas lengkap, meningkatkan kontrol keamanan.</div>
+          </div>
+        </div>
+
+        <div class="rich-media">
+          <div class="before-after-grid">
+            <div class="before-after-item">
+              <img src="images/proyek/v_web.png" alt="Visitor System - Web" class="screenshot" loading="lazy" />
+              <div class="caption">tampilan web</div>
+            </div>
+            <div class="before-after-item">
+              <img src="images/proyek/v_mobi.png" alt="Visitor System - Mobile" class="screenshot" loading="lazy" />
+              <div class="caption">tampilan app</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Teddy Sunanto. <a href="index.html" data-i18n="footer.home">Kembali ke Home</a></p>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

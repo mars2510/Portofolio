@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Editor Portfolio - Teddy Sunanto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">Teddy Sunanto</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html#projects" data-i18n="nav.back">Kembali</a></li>
+        <li><a href="Rich.html">Rich Content</a></li>
+        <li><a href="Showcase.html">Showcase</a></li>
+        <li><a href="proyek.html">Proyek</a></li>
+        <li><a href="index.html#contact">Hubungi Saya</a></li>
+      </ul>
+      <div class="lang-switch">
+        <label for="langSelect" class="sr-only">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- Hero kecil -->
+  <section class="section hero-small">
+    <div class="container">
+      <h1 data-i18n="editor.title">Image Editor Portfolio</h1>
+      <p class="subtitle" data-i18n="editor.subtitle">Ribuan gambar produk e-commerce yang saya edit dengan standar tinggi: background removal, color grading, retouching, compositing, dan optimasi visual untuk meningkatkan konversi.</p>
+    </div>
+  </section>
+    <div class="hero-bg">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+    </div>
+
+  <!-- Konten Utama: Kiri Teks - Kanan Before-After -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Contoh 1: Sepatu Sneakers -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Sepatu Sneakers</h2>
+          <p class="category">Produk Fashion</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Adobe Photoshop, Freepik (referensi aset)</p>
+
+          <p>Editing utama: hapus background menjadi putih bersih, retouching detail kulit sepatu, penyesuaian shadow natural, dan peningkatan ketajaman agar terlihat premium di marketplace.</p>
+
+          <div class="case-study">
+            <h4 data-i18n="case.results">Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Background berantakan, warna kusam, detail kurang tajam.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Clean white bg, warna vivid, shadow realistis → meningkatkan tampilan profesional dan daya tarik pembeli.</div>
+          </div>
+        </div>
+
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Sepatu Sneakers.webp" alt="Sepatu Sneakers - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Sepatu Sneakers edit.jpg" alt="Sepatu Sneakers - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 2: Tas Wanita -->
+      <div class="rich-item reverse">
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Tas Wanita.jpg" alt="Tas Wanita - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Tas Wanita edit.jpg" alt="Tas Wanita - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+
+        <div class="rich-text">
+          <h2>Tas Wanita</h2>
+          <p class="category">Produk Fashion & Aksesoris</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Adobe Photoshop</p>
+
+          <p>Color correction untuk menyesuaikan tone kulit asli tas, penambahan shadow natural agar terlihat 3D, dan optimasi brightness/contrast untuk tampilan premium.</p>
+
+          <div class="case-study">
+            <h4 data-i18n="case.results">Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Warna kusam, pencahayaan tidak merata, terlihat flat.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Warna lebih hidup, shadow realistis → meningkatkan perceived value produk.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 3: Jam Tangan -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Jam Tangan</h2>
+          <p class="category">Produk Aksesoris</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Adobe Photoshop, Freepik (untuk referensi dial)</p>
+
+          <p>Compositing beberapa angle jam menjadi satu frame utama, penyesuaian lighting agar dial terlihat jelas, dan background removal + white space optimal.</p>
+
+          <div class="case-study">
+            <h4 data-i18n="case.results">Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Background berisik, pencahayaan tidak fokus pada dial.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Clean composition, fokus pada detail jam → meningkatkan click-through rate listing.</div>
+          </div>
+        </div>
+
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Jam Tangan.jpg" alt="Jam Tangan - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Jam Tangan edit.jpg" alt="Jam Tangan - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 4: Earphone Wireless -->
+      <div class="rich-item reverse">
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Earphone Wireless.jpg" alt="Earphone Wireless - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Earphone Wireless edit.jpg" alt="Earphone Wireless - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+
+        <div class="rich-text">
+          <h2>Earphone Wireless</h2>
+          <p class="category">Produk Elektronik</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Adobe Photoshop</p>
+
+          <p>Hapus background, buat multiple angle shot dalam satu frame, penyesuaian ketajaman kabel & casing, serta white background standar e-commerce.</p>
+
+          <div class="case-study">
+            <h4 data-i18n="case.results">Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Background berantakan, angle tunggal kurang informatif.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Tampilan 360° feel, clean white bg → membantu pembeli lihat detail produk.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 5: Botol Minum Stainless -->
+      <div class="rich-item">
+        <div class="rich-text">
+          <h2>Botol Minum Stainless</h2>
+          <p class="category">Produk Lifestyle</p>
+          <p class="tools"><strong data-i18n="label.tools">Tools:</strong> Adobe Photoshop</p>
+
+          <p>Remove reflection berlebih pada permukaan stainless, peningkatan sharpness, hapus background, dan penyesuaian warna agar terlihat premium & dingin.</p>
+
+          <div class="case-study">
+            <h4 data-i18n="case.results">Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Reflection terlalu kuat, warna kusam.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Permukaan bersih, warna metalik menarik → terlihat high-end.</div>
+          </div>
+        </div>
+
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Botol Minum Stainless.webp" alt="Botol Minum Stainless - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Botol Minum Stainless edit.jpg" alt="Botol Minum Stainless - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 6: Kemeja Pria (Ghost Mannequin) -->
+      <div class="rich-item reverse">
+        <div class="rich-media before-after-grid">
+          <div class="before-after-item">
+            <img src="images/Kemeja Pria.webp" alt="Kemeja Pria - sebelum" class="screenshot" loading="lazy"/>
+            <div class="caption">Before</div>
+          </div>
+          <div class="before-after-item">
+            <img src="images/Kemeja Pria edit.jpg" alt="Kemeja Pria - sesudah" class="screenshot" loading="lazy"/>
+            <div class="caption">After</div>
+          </div>
+        </div>
+
+        <div class="rich-text">
+          <h2>Kemeja Pria (Ghost Mannequin)</h2>
+          <p class="category">Produk Fashion</p>
+          <p class="tools"><strong>Tools:</strong> Adobe Photoshop</p>
+
+          <p>Teknik ghost mannequin: hapus manekin, hilangkan lipatan/kusut, sesuaikan bentuk baju agar terlihat rapi, dan background putih standar.</p>
+
+          <div class="case-study">
+            <h4>Hasil & Impact</h4>
+            <div class="case-item"><strong>Sebelum:</strong> Manekin terlihat, banyak kusut, bentuk baju kurang ideal.</div>
+            <div class="case-item"><strong>Sesudah:</strong> Tampilan flat layaknya baju digantung rapi → meningkatkan profesionalitas listing fashion.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Teddy Sunanto. <a href="index.html" data-i18n="footer.home">Kembali ke Home</a></p>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

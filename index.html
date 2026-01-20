@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teddy Sunanto - Portfolio | Multimedia & Developer</title>
+  <meta name="description" content="Profesional dengan 9+ tahun pengalaman di image editing, rich content e-commerce, dan pengembangan web/mobile. Mahasiswa Teknik Informatika semester 6."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="index-page"> <!-- blended dark/light layout (no toggle) -->
+
+  <!-- Navbar Sticky -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">PORTOFOLIO</div>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li class="nav-item dropdown">
+          <a href="#projects" data-i18n="nav.projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu" aria-label="Projects menu">
+            <li><a href="Rich.html" data-i18n="projects.menu.rich">Rich Content</a></li>
+            <li><a href="editor.html" data-i18n="projects.menu.editor">Image Editor</a></li>
+            <li><a href="Showcase.html" data-i18n="projects.menu.showcase">Showcase</a></li>
+            <li><a href="proyek.html" data-i18n="projects.menu.proyek">Proyek Pengembangan</a></li>
+          </ul>
+        </li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#collab" data-i18n="nav.collab">Kolaborasi</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <label for="langSelect" class="sr-only">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero hero-full" data-aos="fade-up">
+        <div class="hero-bg">
+          <span class="blob blob-1"></span>
+          <span class="blob blob-2"></span>
+        </div>
+        <div class="container hero-content">
+    <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">Teddy Sunanto</h1>
+    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+      Multimedia Content Specialist & Junior Developer
+    </h2>
+    <p class="tagline" data-aos="fade-up" data-aos-delay="600">
+      9+ tahun mengedit visual e-commerce • Mahasiswa TI semester 6 • Membuat app & tools custom
+    </p>
+    <div class="cta" data-aos="fade-up" data-aos-delay="800">
+      <a href="#projects" class="btn primary">Lihat Karya</a>
+      <a href="mailto:email@kamu.com" class="btn secondary">Hubungi Saya</a>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-i18n="about.title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1">Saya adalah profesional kreatif dan detail-oriented dengan pengalaman lebih dari 9 tahun di industri e-commerce. Portofolio ini mencakup hasil kerja di pengeditan visual, penulisan konten rich, editing video, serta proyek coding (extension, app Android, website).</p>
+          <p data-i18n="about.p2">Saya suka menggabungkan estetika visual dengan solusi teknis untuk menciptakan pengalaman pengguna yang optimal. Terbuka untuk kolaborasi di bidang content creation atau pengembangan web/mobile.</p>
+        </div>
+        <div class="about-photo">
+          <img src="images/foto-profil.png" alt="Teddy Sunanto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 data-i18n="skills.title">Keahlian Utama</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Visual & Content</h3>
+          <ul>
+            <li>Adobe Photoshop (Expert)</li>
+            <li>CapCut (Video Editing)</li>
+            <li>Rich Content Creation</li>
+            <li>Product Description Writing</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Development</h3>
+          <ul>
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>Flutter & Kotlin (Mobile)</li>
+            <li>PHP + MySQL</li>
+            <li>VSCode Extensions & Automation</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Lainnya</h3>
+          <ul>
+            <li>Microsoft Office (Advanced)</li>
+            <li>Freepik Assets</li>
+            <li>Team Coordination (ex-PIC)</li>
+            <li>Problem-Solving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (Grid Cards) -->
+  <section id="projects" class="section projects full-bleed">
+    <div class="container">
+      <h2 data-i18n="projects.title">Projects & Showcase</h2>
+      <div class="projects-grid">
+        <!-- Kamu isi card ini dengan gambar/video sendiri -->
+        <a class="project-card" href="Rich.html">
+          <div class="project-media">
+            <img class="placeholder" src="images/logo/rich.jpg" alt="Rich Content">
+            <!--atau <video controls><source src="videos/sample.mp4"></video> -->
+          </div>
+          <h3>Rich Content</h3>
+          <p>Konten visual + deskripsi produk untuk e-commerce.</p>
+        </a>
+
+        <a class="project-card" href="editor.html">
+          <div class="project-media">
+            <img class="placeholder" src="images/logo/imagee.jpg" alt="Image Editor Portfolio">
+          </div>
+          <h3>Image Editor</h3>
+          <p>Editing ribuan gambar produk (background removal, retouching).</p>
+        </a>
+
+        <a class="project-card" href="Showcase.html">
+          <div class="project-media">
+            <img class="placeholder" src="images/logo/content.jpg" alt="Showcase Video Edits">
+          </div>
+          <h3>Showcase</h3>
+          <p>Koleksi video promo & pengenalan produk.</p>
+        </a>
+
+        <a class="project-card" href="proyek.html">
+          <div class="project-media">
+            <img class="placeholder" src="images/logo/coding.jpg" alt="Proyek Coding">
+          </div>
+          <h3>Proyek Pengembangan</h3>
+          <p>Aplikasi, website, extension custom (Flutter, Kotlin, JS).</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 data-i18n="experience.title">Pengalaman Kerja</h2>
+      <div class="exp-item">
+        <h3>Rich Content Specialist</h3>
+        <span>[Tahun] – Sekarang (±2 tahun+)</span>
+        <p>Membuat konten rich, deskripsi persuasif, integrasi visual edited.</p>
+      </div>
+      <div class="exp-item">
+        <h3>Image Editor</h3>
+        <span>[Tahun] – [Tahun] (7 tahun)</span>
+        <p>Editing gambar produk, quality control, leadership PIC 1 tahun, develop extension automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolaborasi -->
+  <section id="collab" class="section collab full-bleed">
+    <div class="container">
+      <h2 data-i18n="collab.title">Kolaborasi</h2>
+      <p data-i18n="collab.p">Beberapa mitra & klien yang pernah bekerja bersama saya</p>
+      <div class="logos-grid" aria-label="Kolaborasi logos">
+        <div class="logo-item">
+          <img src="images/Logo/Blibli_logo.png" alt="Blibli" loading="lazy">
+        </div>
+        <div class="logo-item">
+          <img src="images/Logo/BlibliFriends_logo.png" alt="Blibli Friends" loading="lazy">
+        </div>
+        <div class="logo-item">
+          <img src="images/Logo/Fas_logo.jpg" alt="Fas" loading="lazy">
+        </div>
+        <div class="logo-item">
+          <img src="images/Logo/PensilBiru_logo.jpg" alt="Pensil Biru" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 data-i18n="contact.title">Hubungi Saya</h2>
+        <p>
+          <a href="mailto:teddy.sunanto@gmail.com">teddy.sunanto@gmail.com</a>
+          &nbsp;|&nbsp;
+          <a href="https://linkedin.com/in/teddy-sunanto" target="_blank" rel="noopener">linkedin.com/in/teddy-sunanto</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/mars2510" target="_blank" rel="noopener">github.com/mars2510</a>
+        </p>
+      <p>Terima kasih telah berkunjung! Mari kolaborasi.</p>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2026 Teddy Sunanto. Built with passion using HTML, CSS & JS.</p>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

@@ -32,7 +32,7 @@ const translations = {
     'showcase.title': 'Showcase & Other Projects',
     'showcase.subtitle': 'Koleksi konten sosial media, reels, dan thumbnail produk yang saya buat untuk mendukung brand dan e-commerce.',
     'editor.title': 'Image Editor Portfolio',
-    'editor.subtitle': 'Ribuan gambar produk e-commerce yang saya edit: background removal, retouching, dan optimasi visual.',
+    'editor.subtitle': 'Beberapa gambar produk e-commerce yang saya edit dengan standar tinggi: background removal, color grading, retouching, compositing, dan optimasi visual untuk meningkatkan konversi.',
     'rich.title': 'Rich Content Showcase',
     'rich.subtitle': 'Koleksi deskripsi produk & artikel e-commerce — lengkap dengan tujuan, tantangan, dan hasil.',
     'proyek.title': 'Proyek Pengembangan',
@@ -274,3 +274,4 @@ function applyBlockTranslation(key, selector) {
 }
 
 export { translations, applyTranslations, applyBlockTranslation };
+

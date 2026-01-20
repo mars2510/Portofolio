@@ -189,6 +189,14 @@ body.light-mode .hero { background: url('../images/backOval.jpg') center/cover n
 .secondary { background: transparent; border: 2px solid #6c5ce7; color: #6c5ce7; }
 .secondary:hover { background: #6c5ce7; color: white; }
 
+/* Project links container used across proyek.html (replaces inline styles) */
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
 /* Sections */
 h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; color: #6c5ce7; }
 
@@ -261,6 +269,23 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #6c5ce7;
   justify-content: center;
   align-items: flex-start;
 }
+
+/* Utility: vertical stack for before-after grids (use for tall/horizontal images) */
+.before-after-grid.vertical {
+  flex-direction: column;
+  gap: 1rem;
+}
+.before-after-grid.vertical .before-after-item {
+  flex: 1 1 100%;
+  max-width: 920px; /* allow larger display when stacked */
+}
+
+/* Utility: enlarge a single screenshot (use on img or wrapper) */
+.screenshot.large {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+}
 .before-after-item {
   flex: 1 1 320px;
   max-width: 520px;
@@ -281,6 +306,18 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #6c5ce7;
   margin-top: 0.5rem;
   color: rgba(255,255,255,0.65);
   font-size: 0.95rem;
+}
+
+/* Ensure vertical stacked items can expand beyond the default 520px limit */
+.before-after-grid.vertical .before-after-item {
+  flex: 1 1 100%;
+  max-width: 920px !important;
+}
+.before-after-grid.vertical .before-after-item .screenshot,
+.before-after-grid .before-after-item .screenshot.large {
+  max-width: 920px !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 @media (max-width: 899px) {
@@ -876,4 +913,46 @@ a:focus {
   .before-after-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Overrides: ensure vertical variant wins over later grid rules */
+.before-after-grid.vertical {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  align-items: center !important;
+}
+.before-after-grid.vertical .before-after-item {
+  width: 100% !important;
+  max-width: 920px !important;
+}
+.before-after-item img.screenshot.large {
+  width: 100% !important;
+  max-width: 920px !important;
+  height: auto !important;
+}
+
+/* Target barcode image only: allow it to expand more on wide screens */
+#barcode-img {
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+/* Single-column grid (used for single screenshot items) */
+.before-after-grid.single {
+  grid-template-columns: 1fr !important;
+  display: grid !important;
+}
+.before-after-grid.single .before-after-item.full-bleed {
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+.before-after-grid.single .before-after-item.full-bleed img#barcode-img {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block !important;
 }

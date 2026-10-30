@@ -1,0 +1,259 @@
+/* ================= MODAL POPUP DETAIL ================= */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    /* Paksa selalu flex agar selalu di tengah */
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Gaya untuk gambar di dalam modal */
+.modal-img {
+    width: 100%;
+    max-height: 500px;
+    /* Batasi tinggi maksimal agar tidak terlalu panjang */
+    object-fit: contain;
+    /* Agar gambar utuh tidak terpotong */
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    /* Jarak antara gambar dan judul di bawahnya */
+    display: block;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 650px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+    color: #111;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+.modal.show .modal-content {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #111;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.modal-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #2563eb;
+}
+
+.modal-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.modal-content li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Tombol Pemicu Modal di Kartu */
+.pembungkus-btn-detail {
+    text-align: right;
+    margin-top: 0px;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin-top: 2px;
+    background: #f0f4ff;
+    color: #2359ce;
+    border: 1px solid #d0dfff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.70rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-detail:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/*keterangan tools setiap gambar*/
+.card-text {
+    font-size: 0.70rem !important;
+    color: #1d293f !important;
+    font-weight: 600 !important;
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+
+/* --- SLIDER DI DALAM MODAL Samsung--- */
+.modal-slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-slide.active {
+    display: flex;
+}
+
+.modal-slide .modal-img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+/* Tombol panah di dalam modal */
+.modal-slider-container .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.123);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.modal-slider-container .slider-btn:hover {
+    background: #2563eb;
+}
+
+.modal-slider-container .slider-btn:nth-child(4) {
+    left: 10px;
+}
+
+/* Tombol Prev */
+.modal-slider-container .slider-btn:nth-child(5) {
+    right: 10px;
+}
+
+/* Tombol Next */
+
+/* --- KHUSUS UNTUK POPUP BANNER LEBAR (SAVORIA) --- */
+.modal-content-wide {
+    max-width: 1000px;
+    /* Lebih lebar dari popup biasa (650px) */
+    width: 95%;
+    /* Mengikuti lebar layar, maksimal 95% */
+}
+
+/* Memastikan gambar banner di dalamnya memenuhi lebar kotak */
+.modal-content-wide .modal-img {
+    width: 100%;
+    height: auto;
+    /* Biarkan tinggi menyesuaikan proporsi gambar */
+    max-height: none;
+    /* Menghapus batasan tinggi agar tidak mengecil */
+    object-fit: contain;
+    background: #ffffff;
+}
+
+/* --- POSISI TOOLTIP KANAN BAWAH (KHUSUS GAMBAR VIDEO) --- */
+.link-kanan-bawah {
+    top: auto !important;
+    bottom: 15px !important;
+    left: auto !important;
+    right: 15px !important;
+    transform: none !important; /* Hilangkan efek tengah */
+    font-size: 0.8rem !important;
+    background: rgba(37, 99, 235, 0.9) !important; /* Warna biru */
+}
+
+/* --- LINK DI DALAM POPUP VIDEO --- */
+.btn-link-popup {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+.btn-link-popup:hover {
+    text-decoration: underline;
+}
+
+/* --- CSS KHUSUS UNTUK POPUP VIDEO --- */
+.video-container-popup {
+    width: 100%;
+    max-height: 60vh; /* Membatasi tinggi video maksimal 60% dari layar */
+    background-color: #000000; /* Latar hitam sinematik */
+    border-radius: 8px;
+    display: flex; 
+    justify-content: center; /* Video ke tengah (kiri-kanan) */
+    align-items: center; /* Video ke tengah (atas-bawah) */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.video-container-popup video {
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    object-fit: contain; /* Memastikan video tidak gepeng dan tetap utuh */
+    border-radius: 8px;
+}
